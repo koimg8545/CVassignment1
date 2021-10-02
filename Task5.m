@@ -84,6 +84,9 @@ imshow(borderFilt)
 
 %%
 % find corner coordinates of rectangle border
+rowFilt = rowCropR .* rowCropG .* rowCropB
+colFilt = colCropR .* colCropG .* colCropB
+
 y1 = max(find(rowFilt(1:fix(h/2)) == 0))
 y2 = fix(h/2) + min(find(rowFilt(fix(h/2)+1:end) == 0))
 

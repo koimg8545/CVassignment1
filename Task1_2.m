@@ -23,6 +23,15 @@ imG = image .* g
 imB = image .* b
 
 %%
+imshow(imR)
+
+%%
+imshow(imG)
+
+%%
+imshow(imB)
+
+%%
 % task2 start
 % average filters
 filtRB = [0.25 0.5 0.25;
