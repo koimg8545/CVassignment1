@@ -49,9 +49,9 @@ rowAverageG = mean(histeq(imG), 2)
 
 %%
 % set threshold for binarize vector
-rowCropR = rowAverageR > 0.18
-rowCropG = rowAverageG > 0.18
-rowCropB = rowAverageB > 0.18
+rowCropR = rowAverageR > 0.15
+rowCropG = rowAverageG > 0.15
+rowCropB = rowAverageB > 0.15
 
 %%
 % make filters that represent row borders
@@ -66,9 +66,9 @@ colAverageB = mean(histeq(imB))
 colAverageG = mean(histeq(imG))
 
 %%
-colCropR = colAverageR > 0.18
-colCropG = colAverageG > 0.18
-colCropB = colAverageB > 0.18
+colCropR = colAverageR > 0.15
+colCropG = colAverageG > 0.15
+colCropB = colAverageB > 0.15
 
 %%
 colFiltR = repmat(colCropR,[h+1 1])
